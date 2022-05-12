@@ -1,19 +1,17 @@
 .App {
   text-align: center;
   box-sizing: border-box;
-  padding: 2rem;
   overflow: hidden;
 }
 body {
-  background: rgb(6, 3, 141);
-  background: linear-gradient(
-    90deg,
-    rgba(6, 3, 141, 1) 9%,
-    rgba(13, 23, 77, 1) 52%,
-    rgba(6, 3, 141, 1) 100%
-  );
+  background-image: url(./BG.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .App-logo {
+  margin-top: 1rem;
   position: relative;
   height: 5vmin;
   pointer-events: none;
