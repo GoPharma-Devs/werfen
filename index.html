@@ -8,6 +8,25 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+        function recursiveAnimateTitle(string) {
+    let firstLetter = string[0];
+    let title = document.querySelector('title');
+    title.innerHTML += firstLetter;
+    if (string.length > 1) {
+      setTimeout(function() {
+        recursiveAnimateTitle(string.substring(1));
+      }, 100);
+    }
+  }
+  
+  function animateTitle(string) {
+    document.querySelector('title').innerHTML = "";
+    recursiveAnimateTitle(string);
+  }
+  
+  animateTitle('Werfen Talks: Platicando con el experto | Werfen en México');
+    </script>
     <script type="module" src="/src/main.jsx"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
   </body>
